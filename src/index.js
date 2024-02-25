@@ -25,7 +25,7 @@ app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 app.set('views', __dirname + '/views')
 
-const mensajes = []
+const mensajes = [] // info q deberia llegar de una base de datos
 io.on('connection', (socket) => {
     console.log("Conexion con Socket.io")
 
