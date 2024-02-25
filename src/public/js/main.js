@@ -26,7 +26,7 @@ chatBox.addEventListener('keyup', (e) => {
 
 })
 
-socket.on('mensajeLogs', info => {
+socket.on('mensajeLogs', info => { //recibir la informacion de los mensajes con tiempo 
     messageLogs.innerHTML = ""
     info.forEach(mensaje => {
         messageLogs.innerHTML += `<p>${mensaje.hora}hs. Usuario ${mensaje.usuario} dice: ${mensaje.mensaje}</p>`
